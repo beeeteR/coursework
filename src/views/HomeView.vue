@@ -2,11 +2,13 @@
   <div class="container home-content">
     <my-carousel></my-carousel>
     <div class="line"></div>
+    <my-catalog></my-catalog>
   </div>
 </template>
 
-<script lang="ts" setup>
+<script setup>
 import MyCarousel from "@/components/MyCarousel.vue";
+import MyCatalog from "@/components/MyCatalog.vue";
 
 </script>
 

@@ -3,7 +3,7 @@
   <router-view></router-view>
 </template>
 
-<script lang="ts" setup>
+<script setup>
 import MyNavbar from './components/MyNavbar.vue';
 </script>
 

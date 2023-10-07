@@ -64,7 +64,7 @@
     </nav>
 </template>
 
-<script lang="ts" setup>
+<script setup>
 import router from '@/router';
 
 
