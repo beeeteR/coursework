@@ -1,0 +1,94 @@
+.popular {
+    margin-top: 3rem;
+
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    &__title {
+        text-align: center;
+        padding-bottom: 3rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+        font-size: 3.5rem;
+        font-weight: 400;
+    }
+
+    &__arrow {
+        display: flex;
+        width: 96px;
+        height: 96px;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        svg {
+            opacity: 0.6;
+            transition: all 300ms;
+        }
+
+        &:hover {
+            svg {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+        }
+    }
+
+    .--left {
+        transform: rotate(90deg);
+    }
+
+    .--right {
+        transform: rotate(-90deg);
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        &-img {
+            height: 600px;
+            cursor: pointer;
+            overflow: hidden;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                transition: all 300ms;
+
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+        }
+
+        &-title, &-price {
+            text-align: center;
+            margin: 0;
+        }
+
+        &-title {
+            margin-top: 1rem;
+            font-size: 1.2rem;
+        }
+
+        &-price {
+            font-size: 1.5rem;
+            font-weight: 600;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #cb1d48;
+        }
+    }
+}

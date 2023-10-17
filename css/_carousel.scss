@@ -1,0 +1,19 @@
+.carousel-item {
+    height: 600px;
+
+    img {
+        object-fit: cover;
+        max-height: 100%;
+        height: auto;
+    }
+}
+
+.carousel-indicators {
+    gap: 1rem;
+
+    .carousel-btn {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+    }
+}
