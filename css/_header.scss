@@ -25,4 +25,45 @@
 .nav-link {
     text-transform: uppercase;
     font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.navbar-nav {
+    gap: 1rem;
+
+    @media screen and (width < 992px) {
+        gap: 0;
+    }
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.navbar-toggler {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    div {
+        width: 24px;
+        height: 2px;
+        border-radius: 1rem;
+        background-color: rgb(34, 60, 80);
+        transition: all 400ms;
+    }
+
+    &:focus {
+        box-shadow: unset;
+    }
+
+    &[aria-expanded="true"] {
+        box-shadow: 0 0 0 var(--bs-navbar-toggler-focus-width) #cb1d48;
+
+        div {
+            background-color: #cb1d48;
+        }
+    }
 }
