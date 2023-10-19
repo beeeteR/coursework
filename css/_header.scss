@@ -37,9 +37,17 @@
 }
 
 .navbar-brand {
-    font-size: 1.5rem;
-    font-weight: 500;
-    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0;
+
+    img {
+        width: 64px;
+        height: auto;
+        object-fit: cover;
+    }
 }
 
 .navbar-toggler {

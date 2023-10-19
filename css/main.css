@@ -34,9 +34,17 @@
 }
 
 .navbar-brand {
-  font-size: 1.5rem;
-  font-weight: 500;
-  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 0;
+}
+.navbar-brand img {
+  width: 64px;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .navbar-toggler {
@@ -143,6 +151,11 @@
     width: 72px;
   }
 }
+@media screen and (width < 576px) {
+  #catalog-arrow {
+    width: 48px;
+  }
+}
 #catalog-arrow:hover {
   opacity: 0.8;
   transform: scale(1.05);
@@ -170,6 +183,13 @@
   display: flex;
   justify-content: space-between;
 }
+@media screen and (width < 576px) {
+  .dignities .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 0.5rem;
+  }
+}
 .dignities__circle {
   position: relative;
   border-radius: 50%;
@@ -186,6 +206,12 @@
     padding: 2rem;
   }
 }
+@media screen and (width < 768px) {
+  .dignities__circle {
+    padding: 1rem;
+    outline: 1px solid black;
+  }
+}
 .dignities__circle svg {
   transition: all 400ms;
 }
@@ -193,6 +219,12 @@
   .dignities__circle svg {
     width: 56px;
     height: 56px;
+  }
+}
+@media screen and (width < 768px) {
+  .dignities__circle svg {
+    width: 36px;
+    height: 36px;
   }
 }
 .dignities__circle:hover {
@@ -232,6 +264,12 @@
     font-size: 1.15rem;
   }
 }
+@media screen and (width < 768px) {
+  .dignities__item-title {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+}
 
 .popular {
   padding: 3rem;
@@ -240,6 +278,11 @@
   display: flex;
   align-items: center;
   gap: 2rem;
+}
+@media screen and (width < 576px) {
+  .popular__content {
+    gap: 0.5rem;
+  }
 }
 .popular__title {
   text-align: center;
@@ -255,6 +298,12 @@
     letter-spacing: 4px;
   }
 }
+@media screen and (width < 576px) {
+  .popular__title {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+}
 .popular__arrow {
   display: flex;
   width: 96px;
@@ -267,6 +316,12 @@
   .popular__arrow {
     height: 24px;
     width: 48px;
+  }
+}
+@media screen and (width < 576px) {
+  .popular__arrow {
+    height: 18px;
+    width: 36px;
   }
 }
 .popular__arrow svg {
@@ -302,6 +357,11 @@
 @media screen and (width < 768px) {
   .popular__items {
     gap: 0;
+  }
+}
+@media screen and (width < 768px) {
+  .popular__items {
+    max-width: 80%;
   }
 }
 .popular__items .--item-active {
@@ -408,6 +468,11 @@
   width: 60%;
   overflow: hidden;
 }
+@media screen and (width < 576px) {
+  .subscription__img {
+    display: none;
+  }
+}
 .subscription__img img {
   width: 100%;
   height: auto;
@@ -446,6 +511,12 @@
     font-size: 1.1rem;
   }
 }
+@media screen and (width < 576px) {
+  .subscription__form form #email {
+    font-size: 1rem;
+    width: 100%;
+  }
+}
 .subscription__form form #email:focus-visible {
   outline: none;
   border-radius: 0.5rem;
@@ -472,6 +543,12 @@
     font-size: 1.1rem;
   }
 }
+@media screen and (width < 576px) {
+  .subscription__form form #submit {
+    font-size: 1rem;
+    letter-spacing: normal;
+  }
+}
 .subscription__form form #submit:hover {
   background-color: rgba(203, 29, 72, 0.85);
 }
@@ -495,12 +572,23 @@
     letter-spacing: 2px;
   }
 }
+@media screen and (width < 576px) {
+  .subscription__title {
+    font-size: 24px;
+    letter-spacing: normal;
+  }
+}
 .subscription__text {
   text-align: center;
 }
 @media screen and (width < 992px) {
   .subscription__text {
     font-size: 1.25rem;
+  }
+}
+@media screen and (width < 576px) {
+  .subscription__text {
+    font-size: 1rem;
   }
 }
 

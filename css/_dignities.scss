@@ -6,6 +6,12 @@
     .container {
         display: flex;
         justify-content: space-between;
+
+        @media screen and (width < 576px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 0.5rem;
+        }
     }
 
     &__circle {
@@ -19,7 +25,12 @@
 
         @media screen and (width < 1200px) {
             padding: 2rem;
-        }        
+        }
+
+        @media screen and (width < 768px) {
+            padding: 1rem;
+            outline: 1px solid black;
+        }
 
         svg {
             transition: all 400ms;
@@ -27,6 +38,11 @@
             @media screen and (width < 1200px) {
                 width: 56px;
                 height: 56px;
+            }
+
+            @media screen and (width < 768px) {
+                width: 36px;
+                height: 36px;
             }
         }
 
@@ -69,6 +85,11 @@
 
             @media screen and (width < 992px) {
                 font-size: 1.15rem;
+            }
+
+            @media screen and (width < 768px) {
+                font-size: 0.9rem;
+                font-weight: 500;
             }
         }
     }
