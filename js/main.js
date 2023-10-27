@@ -2,7 +2,9 @@ const catalogBtn = document.getElementById('catalog-arrow')
 const catalog = document.querySelector('.catalog')
 const btnSVG = catalogBtn.querySelector('svg')
 
-
+const btnLeft = document.querySelector('.popular__arrow.--left')
+const btnRight = document.querySelector('.popular__arrow.--right')
+const popularItems = document.querySelectorAll('.popular__item')
 
 
 catalogBtn.addEventListener('click', () => {
@@ -15,11 +17,6 @@ catalogBtn.addEventListener('click', () => {
     }
 })
 
-
-
-const btnLeft = document.querySelector('.popular__arrow.--left')
-const btnRight = document.querySelector('.popular__arrow.--right')
-const popularItems = document.querySelectorAll('.popular__item')
 
 btnRight.addEventListener('click', () => {
     changeActivePopularItem(null, 1)
