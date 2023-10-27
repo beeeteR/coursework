@@ -33,6 +33,10 @@
 
             @media screen and (width < 996px) {
                 margin: 0 auto;
+                height: 600px;
+            }
+            @media screen and (width < 576px) {
+                height: 350px;
             }
         }
     }

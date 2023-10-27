@@ -14,6 +14,9 @@
   padding: 0 var(--bs-navbar-padding-x) var(--bs-navbar-padding-y);
 }
 
+.pre-nav {
+  background-color: #cff5f2;
+}
 .pre-nav .pre-nav__icon {
   cursor: pointer;
   transition: all 300ms;
@@ -580,6 +583,12 @@
 @media screen and (width < 996px) {
   .subscription__img svg {
     margin: 0 auto;
+    height: 600px;
+  }
+}
+@media screen and (width < 576px) {
+  .subscription__img svg {
+    height: 350px;
   }
 }
 .subscription__form {
